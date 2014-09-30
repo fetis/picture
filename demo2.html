@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  </head>
+  <body>
+    <p>
+      <img src="images/400.jpg" width="400" height="300">
+    </p>
+
+    this works
+    <p>
+      <img
+        src="images/400.jpg"  
+        srcset="images/400.jpg 400w, images/800.jpg 800w, images/1200.jpg 1200w"
+        sizes="(min-width: 700px) 75vw, 100vw"
+        >
+    </p>
+
+    this works only on reload
+     <p>
+      <img
+        src="images/400.jpg"  
+        srcset="images/400.jpg 400w, images/800.jpg 800w, images/1200.jpg 1200w"
+        sizes="(min-width: 800px) 550px, 950px"
+        >
+    </p>
+
+    this's buggy
+    <p style="padding: 0 200px">
+        <img 
+          src="images/400crop.jpg"
+          srcset="images/400.jpg 400w, images/800.jpg 800w, images/1200.jpg 1200w"
+          width="500"
+          >
+    </p>
+    
+  </body>
+</html>

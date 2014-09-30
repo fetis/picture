@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+  </head>
+  <body>
+    <p>
+      <img src="images/400.jpg" width="400" height="300">
+    </p>
+
+    <p>
+      <picture>
+        <source media="(min-width: 900px)" srcset="images/original.jpg 1200w" sizes="100vw">
+        <source media="(min-width: 700px)" srcset="images/800crop.jpg 800w" sizes="100vw">
+        <img 
+          srcset="images/400crop.jpg 400w"
+          sizes="100vw"  
+          >
+      </picture>
+    </p>
+    
+  </body>
+</html>
